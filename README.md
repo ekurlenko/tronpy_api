@@ -14,7 +14,7 @@ POSTGRES_PORT=5432
 
 ### 2. Запуск 
 
-Используйте Docker Compose для запуска PostgreSQL:
+Используйте Docker Compose для запуска приложения:
 
 ```bash
 docker compose up --build
