@@ -19,3 +19,8 @@ POSTGRES_PORT=5432
 ```bash
 docker compose up --build
 ```
+### 3. Тест
+Перейдите по ссылке
+```
+http://0.0.0.0:8000/docs
+```
