@@ -8,7 +8,9 @@ from tronpy.providers import HTTPProvider
 from app.repositories import WalletRepository, get_wallet_repository
 from app.schemas import Address, AccountData, ExceptionMessage, WalletsResponse
 
-provider = HTTPProvider(api_key="c2af4e33-9cd5-4fdb-a5fc-44ceb7d7ed8b")
+from app.settings import settings
+
+provider = HTTPProvider(api_key=settings.API_KEY)
 
 client = Tron(provider=provider, network="shasta")
 

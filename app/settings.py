@@ -9,6 +9,8 @@ class Settings(BaseSettings):
     POSTGRES_HOST: str
     POSTGRES_PORT: str
 
+    API_KEY: str
+
     @computed_field
     @property
     def get_postgres_url(self) -> str:
